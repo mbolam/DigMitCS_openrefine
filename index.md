@@ -14,7 +14,7 @@ Offered Feb 2017 at [University of Idaho Library](http://www.lib.uidaho.edu/)
 
 > built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
 >
-> content: cc-by-sa <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> {{ site.pub_year}}. (get [source code]({{ site.repo }}))
+> content: cc-by-sa <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> {{ site.pub_year}}. (get [source code]>>({{ site.repo }}))
 > original content and site design by <a href="https://github.com/evanwill">evan will</a> 2016. (get <a href="https://github.com/uidaholib/clean-your-data">source code</a>)
 >
 > <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" /></a>
