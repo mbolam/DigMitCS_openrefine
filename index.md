@@ -4,7 +4,7 @@ layout: default
 
 {% include figure.html file="refinegem.jpg" alt="openrefine gem" width="50%" %}
 
-# Cleaning and Linking Data OpenRefine
+# Cleaning and Linking Data with OpenRefine
 
 Before analysis comes the messy work of evaluating, cleaning, and transforming data. This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html). We will install Refine, create a project, and get oriented to the many features for exploring and transforming tabular data.
 
