@@ -17,6 +17,7 @@ Inconsistent formats, unnecessary white space, extra characters, typos, etc...
 | Wed, Oct 14th | US$1000 | Pennsylvania, |
 | 42291 | $1k | Pennsylvania |
 
-*Multivalued cells limit ability to manipulate and use the data:*
+
+**Multivalued cells limit ability to manipulate and use the data:**
 
 | Giuseppe Acerbi, Joseph Acerbi, Signor Acerbi | traveller, literary, naturalist, composer |
