@@ -11,7 +11,10 @@ nav: true
 - [List of OpenRefine tutorials](https://github.com/OpenRefine/OpenRefine/wiki/External-Resources)
 - [OpenRefine Google Group](http://groups.google.com/d/forum/openrefine)
 
-- *Using OpenRefine*, by Ruben Verborgh and Max De Wilde, eBook [available at UI library](https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_eblEBL1389316&context=PC&vid=UID&search_scope=everything&tab=everything&lang=en_US)
+# Books
+
+- [*Using OpenRefine*](https://www.packtpub.com/big-data-and-business-intelligence/using-openrefine), by Ruben Verborgh and Max De Wilde
+- [*Linked Data for Libraries, Archives, and Museums*](http://book.freeyourmetadata.org/), by Seth van Hooland and Ruben Verborgh
 
 # Tutorials & Examples:
 
@@ -23,3 +26,4 @@ nav: true
 - [Library Carpentry OpenRefine](https://data-lessons.github.io/library-openrefine/), workshop lesson with library data examples.
 - [Cleaning Data with OpenRefine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine) intro lesson from Programming Historian focusing on history data.
 - [Fetching and Parsing Data from the Web with OpenRefine](https://programminghistorian.org/lessons/fetch-and-parse-data-with-openrefine) advanced lesson from Programming Historian focusing on historical data.
+- [Free Your Metadata](http://freeyourmetadata.org/) tutorials on cleaning and reconciling museum data.
