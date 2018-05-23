@@ -17,7 +17,7 @@ The data fields are
 - occupation
 - viaf id
 
-# Navigating OpenRefine
+## Navigating OpenRefine
 
 - Creating a project
   - check character encoding, options
@@ -40,7 +40,7 @@ The data fields are
   - create new project with original file
   - Undo/Redo paste saved extract into `Apply`
 
-# Exploring and Cleaning Data
+## Exploring and Cleaning Data
 
 - Cleaning the simple stuff
   - a lot of options in the drop-down menus
@@ -51,17 +51,17 @@ The data fields are
   - GREL = General Refine Expression Language
   - GREL [documentation](https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language) and [recipes](https://github.com/OpenRefine/OpenRefine/wiki/Recipes) are available on the OpenRefine wiki.
 
-> ### Sample GREL Recipes
->
-> - Remove duplicate comma separated entries in a cell
->   - value.split(", ").uniques().join(", ")
-> - Replace string in cells
->   -value.replace("+", "")
->   -value.replace("~"", "").replace(",", "").replace("-", "")
-> - Clean-up character encoding problems
->   - value.unescape("url")
-> - Convert number with text to number
->   - toNumber(value.replace(" million", ""))*1000000
+#### Sample GREL Recipes
+
+ - Remove duplicate comma separated entries in a cell
+   - value.split(", ").uniques().join(", ")
+ - Replace string in cells
+   -value.replace("+", "")
+   -value.replace("~"", "").replace(",", "").replace("-", "")
+ - Clean-up character encoding problems
+   - value.unescape("url")
+ - Convert number with text to number
+   - toNumber(value.replace(" million", ""))*1000000
 
 - Splitting, faceting, and clustering
   - multi-valued fields can be a barrier to data cleaning
@@ -71,7 +71,7 @@ The data fields are
     - manual cleaning and clustering
     - `Edit cells` > `Join multi-valued cells`
 
-# Enhancing with Data from Other Sources
+## Enhancing with Data from Other Sources
 
 - Reconciling from other data sources
   - Vocabulary reconciliation is a process where automated systems use terms from unstandardized metadata to search controlled vocabularies and return URIs.
@@ -95,26 +95,32 @@ The data fields are
     - `Edit column` > `Add column based on this column...`
     - name column: wikidata_id
     - cell.recon.match.id
-  - Compare the collected and extracted VIAF ids
-    - Clean up collected VIAF ids
-      - `Facet` > `Customized facets` > `Facet by blank`
-      - On rows view, choose `false` to select rows with viaf ids
-      - `Filter` - regex: ^(?!http://).+
-      - Transform cells to remove final "/" temporarily - value.replace(/\/$/, "")
-      - Transform cells to apply final "/" because that is what VIAF expects - value+"/"
-    - Make extracted VIAF id numbers into VIAF URLs
-      - `Edit column` > `Add column based on this column...`
-      - name column: viaf_url
-      - "http://http://viaf.org/viaf/" + value + "/"
-    - Build a facet to compare the two columns
-      - value == cells["viaf id"].value
+
+- Adding more data based on extracted dataset
+  - Geographic Coordinates for places
+    - place of birth > `Edit column` > `Add columns from reconciled values`
+    - Add coordinate location
+
+- Compare the collected and extracted VIAF ids
+  - Clean up collected VIAF ids
+    - `Facet` > `Customized facets` > `Facet by blank`
+    - On rows view, choose `false` to select rows with viaf ids
+    - `Filter` - regex: ^(?!http://).+
+    - Transform cells to remove final "/" temporarily - value.replace(/\/$/, "")
+    - Transform cells to apply final "/" because that is what VIAF expects - value+"/"
+  - Make extracted VIAF id numbers into VIAF URLs
+    - `Edit column` > `Add column based on this column...`
+    - name column: viaf_url
+    - "http://http://viaf.org/viaf/" + value + "/"
+  - Build a facet to compare the two columns
+    - value == cells["viaf id"].value
 
 - Other data services:
   - Users can set up their own data services or use other existing data services.
   - Some sample services are available at the [OpenRefine Wiki - Reconcilable Data Sources](https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources) and at [http://refine.codefork.com/](http://refine.codefork.com/).
   - Reconciliation can be taxing on host servers and data sources. Documentation for hosting your own service are available at and on the [conciliator GitHub](https://github.com/codeforkjeff/conciliator).
 
-# Exporting your cleaned and expanded dataset
+## Exporting your cleaned and expanded dataset
 
 - Export project
 - TSV, CSV, HTML table, Excel (two flavors), ODF spreadsheet
