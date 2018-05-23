@@ -8,7 +8,7 @@ layout: default
 
 Before analysis comes the messy work of evaluating, cleaning, and transforming data. This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html). We will install Refine, create a project, and get oriented to the many features for exploring and transforming tabular data.
 
-Offered Feb 2017 at [University of Idaho Library](http://www.lib.uidaho.edu/)
+Offered May 24, 2018 as part of the [Digital Mitford Coding School](https://digitalmitford.github.io/DigMitCS/) at the [University of Pittsburgh Libraries](http://www.library.pitt.edu).
 
 > built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
 >
