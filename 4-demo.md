@@ -43,7 +43,15 @@ The data fields are
 # Exploring and Cleaning Data
 
 - Cleaning the simple stuff
-  - Get rid of white space
+  - a lot of options in the drop-down menus
+  - get rid of white space
+
+- Splitting, faceting, and clustering
+  - multi-valued fields can be a barrier to data cleaning
+  - Edit cell > split multi-valued cells
+  - record view vs. row view
+  - Facet > Text facet
+  - manual cleaning and clustering
 
 # Enhancing with Data from Other Sources
 
