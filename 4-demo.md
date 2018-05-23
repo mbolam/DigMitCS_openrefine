@@ -45,13 +45,18 @@ The data fields are
 - Cleaning the simple stuff
   - a lot of options in the drop-down menus
   - get rid of white space
+  - `Edit cells` > `Common transforms`
+  - `Edit cells` > `Transform...` is very powerful
+  - GREL = General Refine Expression Language
+  - GREL [documentation](https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language) and [recipes](https://github.com/OpenRefine/OpenRefine/wiki/Recipes) are available on the OpenRefine wiki.
 
 - Splitting, faceting, and clustering
   - multi-valued fields can be a barrier to data cleaning
-  - Edit cell > split multi-valued cells
+  - `Edit cells` > `Split multi-valued cells...`
   - record view vs. row view
-  - Facet > Text facet
+  - `Facet` > `Text facet`
   - manual cleaning and clustering
+  - `Edit cells` > `Join multi-valued cells`
 
 # Enhancing with Data from Other Sources
 
