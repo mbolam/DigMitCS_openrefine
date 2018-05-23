@@ -19,15 +19,15 @@ The data fields are
 
 ## Navigating OpenRefine
 
-- Creating a project
-  - check character encoding, options
-  - Refine never over writes your original data, it creates a copy!
-  - information is *not* sent over internet
+Creating a project
+- check character encoding, options
+- Refine never over writes your original data, it creates a copy!
+- information is *not* sent over internet
 
-- Manipulating columns
-  - renaming and removing columns
-  - changing column order
-  - collapsing columns
+Manipulating columns
+- renaming and removing columns
+- changing column order
+- collapsing columns
 
 - Exporting a project or a data set
   - OpenRefine project
