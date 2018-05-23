@@ -45,7 +45,8 @@ The data fields are
 - Cleaning the simple stuff
   - a lot of options in the drop-down menus
   - get rid of white space
-    - `Edit cells` > `Common transforms`
+    - One column at a time: `Edit cells` > `Common transforms`
+    - Entire sheet: `All` > `Transform` > value.trim() and value.replace(/\s+/,' ')
   - `Edit cells` > `Transform...` is very powerful
   - GREL = General Refine Expression Language
   - GREL [documentation](https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language) and [recipes](https://github.com/OpenRefine/OpenRefine/wiki/Recipes) are available on the OpenRefine wiki.
@@ -76,3 +77,12 @@ The data fields are
     - `Edit column` > `Add columns from reconciled values`
     - Add country of citizenship, occupation, place of birth, place of death, place of burial, and VIAF ID
     - `Add Property` filter to include date of birth and date of death
+  - Review the results of your reconciliation
+    - date of birth > `Facet` > `Timeline facet`
+  - Compare the collected and extracted VIAF ids
+    - Clean up collected VIAF ids
+      - `Facet` > `Customized facets` > `Facet by blank`
+      - On rows view, choose `false` to select rows with viaf ids
+      - `Filter` - regex: ^(?!http://).+
+      - Transform cells to remove final "/" temporarily - value.replace(/\/$/, "")
+5. Transform cells to apply final "/" because that is what VIAF expects - value+"/"
