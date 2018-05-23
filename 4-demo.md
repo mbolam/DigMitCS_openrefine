@@ -17,12 +17,40 @@ The data fields are
 - occupation
 - viaf id
 
-- Create project
-    - check character encoding, options
-    - Refine never over writes your original data, it creates a copy!
-    - information is *not* sent over internet
+# Navigating OpenRefine
 
-- Column basics
+- Creating a project
+  - check character encoding, options
+  - Refine never over writes your original data, it creates a copy!
+  - information is *not* sent over internet
+
+- Manipulating columns
+  - renaming and removing columns
+  - changing column order
+  - collapsing columns
+
+- Exporting a project or a data set
+  - OpenRefine project
+  - many formats!
+  - templating
+  - export is always a new copy of data, never alters original!
+
+- Automating tasks
+  - Undo/Redo copy `Extract` to txt file (use text editor, not Word)
+  - create new project with original file
+  - Undo/Redo paste saved extract into `Apply`
+
+# Exploring and Cleaning Data
+
+- Cleaning the simple stuff
+  - Get rid of white space
+
+# Enhancing with Data from Other Sources
+
+
+
+
+
     - text filter
     - faceting
     - edit cells / facets
@@ -35,16 +63,6 @@ The data fields are
         - transform, `value + " " + cells["col 2"].value`
     - remove / reorder columns
 
-- Export basics
-	- OpenRefine project
-    - many formats!
-    - templating
-	- export is always a new copy of data, never alters original!
-
-- Automate basics
-	- Undo/Redo copy `Extract` to txt file (use text editor, not Word)
-	- create new project with original file
-	- Undo/Redo paste saved extract into `Apply`
 
 - More!
 	- Star / Flag & remove rows
