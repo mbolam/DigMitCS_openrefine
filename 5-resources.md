@@ -21,5 +21,6 @@ nav: true
 - [Cleaning Data with Refine](http://schoolofdata.org/handbook/recipes/cleaning-data-with-refine/), tutorial from School of Data using African hospital data.
 - [Using Google Refine to Clean Messy Data](https://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning), tutorial from ProPublica focusing on data journalism.
 - [Library Carpentry OpenRefine](https://data-lessons.github.io/library-openrefine/), workshop lesson with library data examples.
+- [OpenRefine for UNLV Libraries](https://geokels.github.io/OpenRefine-UNLV-Libraries/), a derivative of the Library Carpentry OpenRefine tutorial designed to serve as an introductory lesson to OpenRefine for Scholarly Communications Initiatives at UNLV Libraries.
 - [Cleaning Data with OpenRefine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine) intro lesson from Programming Historian focusing on history data.
 - [Fetching and Parsing Data from the Web with OpenRefine](https://programminghistorian.org/lessons/fetch-and-parse-data-with-openrefine) advanced lesson from Programming Historian focusing on historical data.
