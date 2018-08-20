@@ -20,3 +20,5 @@ url: "https://mbolam.github.io/DigMitCS_openrefine" # the base hostname & protoc
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-minimal
